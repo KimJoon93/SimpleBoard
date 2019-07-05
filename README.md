@@ -37,4 +37,6 @@ It's kind of project managing tool.\
 - Project name
 
 ## Database
-I need to install mysql, but I saw Docker. So I download mysql Image and run in docker with one line. 
+I need to install mysql, but I saw Docker. So I download mysql Image and run in docker with one line. Then I connect with DBeaver Tool to 
+check my Database. 
+But Becareful for the container because it doesn't matter when we stop the container but if we remove the container, all database will be deleted.
