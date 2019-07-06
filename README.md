@@ -53,6 +53,16 @@ JBoard --- src --- main --- java : Java Package folder and SourceCode in it.\
 
 - Project name
 
+- Pom.xml
+
+- JSTL
+
+- Connect database
+
+- CSS
+
+- 
+
 ## Database
 I need to install mysql, but I saw Docker. So I download mysql Image and run in docker with one line. Then I connect with DBeaver Tool to 
 check my Database. 
