@@ -55,7 +55,19 @@ JBoard --- src --- main --- java : Java Package folder and SourceCode in it.\
 
 - Pom.xml
 
-- JSTL
+- JSTL (JSP Standard Tag Library)
+    - Core
+    - Formatting
+    - Database
+    - XML
+    - Function
+    
+    We could easily use with prefix
+    ```
+    <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
+    <%@ taglib prefix="sql" uri="http://java.sun.com/jsp/jstl/Database"%>
+    ```
+
 
 - Connect database
 
