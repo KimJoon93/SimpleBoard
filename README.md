@@ -67,7 +67,8 @@ JBoard --- src --- main --- java : Java Package folder and SourceCode in it.\
     <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
     <%@ taglib prefix="sql" uri="http://java.sun.com/jsp/jstl/Database"%>
     ```
-
+    There were problems using JSTL. I know JSTL doesn't use in real, but 
+    I'd like to solve this problem. And I found version is problem.
 
 - Connect database
 
