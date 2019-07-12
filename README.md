@@ -71,7 +71,7 @@ JBoard --- src --- main --- java : Java Package folder and SourceCode in it.\
     I should add isELIgnored="false" because they read EL expression in text if we don't have that code.
 
 - Connect database
-
+    I used mysql with Docker. If I run docker container that contains mysql image, we could access to database. Before docker we should install mysql. 
 - CSS
 
 - 
