@@ -35,7 +35,7 @@ depency to pom.xml file.
 - Allowing transparent migration to new features
 
 ### Maven Structure
-![스크린샷 2019-07-05 오후 7 22 50](https://user-images.githubusercontent.com/32008149/60716417-51d07600-9f5a-11e9-8ac3-a6e6d81adcf2.png)
+![스크린샷 2019-07-05 오후 7 22 50](https://user-images.githubusercontent.com/32008149/60716417-51d07600-9f5a-11e9-8ac3-a6e6d81adcf2.png)
 \
 \
 JBoard --- src --- main --- java : Java Package folder and SourceCode in it.\
@@ -47,7 +47,7 @@ JBoard --- src --- main --- java : Java Package folder and SourceCode in it.\
 
 ### Start Maven
 - Make Project with maven
-    ![스크린샷 2019-07-05 오후 7 02 51](https://user-images.githubusercontent.com/32008149/60715285-a1fa0900-9f57-11e9-92da-dd84b3248858.png)
+    ![스크린샷 2019-07-05 오후 7 02 51](https://user-images.githubusercontent.com/32008149/60715285-a1fa0900-9f57-11e9-92da-dd84b3248858.png)
 
 - Project location
 
@@ -68,7 +68,7 @@ JBoard --- src --- main --- java : Java Package folder and SourceCode in it.\
     <%@ taglib prefix="sql" uri="http://java.sun.com/jsp/jstl/Database"%>
     ```
     There were problems using JSTL. I spend 2days to solve this problem. I know JSTL doesn't use in real, but I'd like to solve this problem. And I found tag is problem. First, I tried to use JSTL sql tag. But error says there are problem in ${}. They can't read and find that class. So I realize I forgot the JDBC connection file. First I downloaded and put it in to lib directory. But everybody says put jar file in lib/ext directory but, I couldn't find ext directory in my lib directory. I was worried that maybe I made mistake when I install JAVA. I just put it in to lib directory but, that doesn't work. So I found maven dependency, and add it to pom.xml. I found jar file has successfully inserted, but that doesn't work. I tried to find reason of error, but there were so many people that has same error with me. I found about version issue, So I changed all the version that fits, But that doesn't work at all. So I tried c:out tag. But that doesn't work, So I realized DB is not the problem. There are problem in JSTL. 
-    I should add isELIgnored="false" because they read EL expression in text if we don't have that code.
+    I should add isELIgnored="false" because they read EL expression in text if we don't have that code. I had error text that they can't read ${}. I should have used c:out first to figure out what problem is. But I thought problem exists in JSTL because I used sql tag first.
 
 - Connect database
     I used mysql with Docker. If I run docker container that contains mysql image, we could access to database. Before docker we should install mysql. 
