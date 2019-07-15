@@ -71,7 +71,11 @@ JBoard --- src --- main --- java : Java Package folder and SourceCode in it.\
     I should add isELIgnored="false" because they read EL expression in text if we don't have that code. I had error text that they can't read ${}. I should have used c:out first to figure out what problem is. But I thought problem exists in JSTL because I used sql tag first.
 
 - Connect database
-    I used mysql with Docker. If I run docker container that contains mysql image, we could access to database. Before docker we should install mysql. 
+    I used mysql with Docker. If I run docker container that contains mysql image, we could use mysql databases without installing mysql. 
+    ```
+    docker ps -a
+    ```
+    I could check what container is running now, or what container is stopped by this command. 
 - CSS
 
 - 
