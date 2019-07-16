@@ -6,6 +6,8 @@
 
     - Connect to database.
 
+    - Make Board list page and Board page.
+
     - Make comment function.
 
     - Make comment in comment function.
