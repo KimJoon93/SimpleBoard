@@ -10,13 +10,12 @@
 <%
 	String userID = request.getParameter("email");
 	String userPw = request.getParameter("password");
-	System.out.println(userID);
 	
 	if(userID!= null){
 		session.setAttribute("UserID", userID);
 		
 	}
-	response.sendRedirect("Home.jsp");
+	response.sendRedirect("Board.jsp");
 %>
 
 <c:out value="${userId}"></c:out>

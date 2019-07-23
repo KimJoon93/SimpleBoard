@@ -11,9 +11,7 @@
     <title>Login Page</title>
 
     <link href="css/bootstrap.css" rel="stylesheet">
-
     <link href="signin.css" rel="stylesheet">
-    
       <!-- Custom styles for this template -->
   <link href="css/grayscale.min.css" rel="stylesheet">
 
