@@ -13,7 +13,7 @@
 	
 	if(userID!= null){
 		session.setAttribute("UserID", userID);
-		
+		System.out.println(userID);
 	}
 	response.sendRedirect("Board.jsp");
 %>
